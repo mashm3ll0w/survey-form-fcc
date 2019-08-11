@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+}
+
+.form-bounds {
+  text-align: initial;
+  background-color: rgb(224, 247, 214);
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 75%;
+  max-width: 900px;
+  padding: 50px;
+  margin-bottom: 70px;
+}
+
+.submit-button {
+  text-align: center;
+  padding-top: 30px;
+}
