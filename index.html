@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+		<title>Survey Form</title>
+	</head>
+
+	<body>
+		<h1 id="title">Survey Form</h1>
+		<div class="form-bounds">
+			<p id="description">Fill out the below form to help us serve you better</p>
+
+			<form id="survey-form">
+				<div class="form-group row">
+					<label id="name-label" for="name" class="col-sm-2 col-form-label">Name</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name" placeholder="Enter your name" autofocus autocomplete="off" required />
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label id="email-label" for="email" class="col-sm-2 col-form-label">Email</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" placeholder="Enter your email" autofocus autocomplete="off" required />
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label id="number-label" for="age" class="col-sm-2 col-form-label">Age</label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="number" placeholder="Enter your age" autofocus autocomplete="off" required min="15" max="70" />
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="" class="col-sm-2 col-form-label">What describes you best:</label>
+					<div class="col-sm-10">
+						<select name="" id="dropdown" class="form-control">
+							<option selected disabled value>Select Option</option>
+							<option value="student">Student</option>
+							<option value="employed">Employed</option>
+							<option value="self-employed">Self Employed</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="" class="col-sm-2 col-form-label form-check-label">Would you recommend us:</label>
+					<div class="col-sm-10">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="recommend" id="radio-no" value="no" />
+							<label class="form-check-label" for="radio-no">No</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="recommend" id="radio-maybe" value="maybe" />
+							<label class="form-check-label" for="radio-maybe">Maybe</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="recommend" id="radio-yes" value="yes" />
+							<label class="form-check-label" for="radio-yes">Yes</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="" class="col-sm-2 col-form-label">I would like you to add:</label>
+					<div class="col-sm-10">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="rust" />
+							<label class="form-check-label" for="inlineCheckbox1">Rust</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="pythonDj" />
+							<label class="form-check-label" for="inlineCheckbox2">Python-Django</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="publishGithub" />
+							<label class="form-check-label" for="inlineCheckbox3">Ability to publish page to Github</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="machine-learn" />
+							<label class="form-check-label" for="inlineCheckbox4">Machine Learning</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="artificial-int" />
+							<label class="form-check-label" for="inlineCheckbox5">Artificial Intelligence</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="" class="col-sm-2 col-form-label">Anything else:</label>
+					<div class="col-sm-10">
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>
+
+				<button id="submit" type="submit" class="btn btn-info btn-sm">Submit</button>
+			</form>
+		</div>
+		<footer>
+			<p><a href="https://www.github.com/mashm3ll0w">GitHub</a> | 2019 | &copy;</p>
+		</footer>
+	</body>
+</html>
